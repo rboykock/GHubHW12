@@ -4,6 +4,10 @@ public class Tyres {
     private int size;
     private String name;
 
+    public Tyres(){
+
+    }
+
     public void setSize(int size) {
        this.size = size;
     }
