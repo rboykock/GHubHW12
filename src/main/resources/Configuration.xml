@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id = "car" class="com.ghub.ivmagl.components.Car">
+        <property name="engine" ref="engine"></property>
+        <property name="wheels" ref="wheel"></property>
+    </bean>
+
+    <bean id = "engine" class="com.ghub.ivmagl.components.Engine">
+        <property name="engineCapacity" value="3.0"></property>
+    </bean>
+
+    <bean id = "wheel" class= "com.ghub.ivmagl.components.Wheel">
+        <property name="tyres" ref="tyres"></property>
+    </bean>
+    
+    <bean id = "tyres" class="com.ghub.ivmagl.components.Tyres">
+        <property name="name" value="Tigar"></property>
+        <property name="size" value="16"></property>
+    </bean>
+</beans>
